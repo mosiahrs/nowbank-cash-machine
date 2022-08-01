@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylelogin.css">
+    <title>NOW BANK</title>
+</head>
+<body>
+    <main id="mainScreen">
+        <section id="screenContainer">
+            <div class="saudation">
+                <p><span>Bem vindo</span> ao</p>
+                <span id="logo"><i class="fa-solid fa-shekel-sign"></i> NOW BANK </span>
+            </div>  
+            <div id="screen">
+                
+                <article id="retornoInfo">
+                    <p> 
+                        <strong>Aqui vai o retorno do JS</strong> <br>tempora illum esse harum veritatis beatae est repellendus, consectetur distinctio exercitationem?
+                    </p>
+                </article>
+            </div>
+
+            <div class="menuContainer">
+                <h4>Selecione a opção desejada</h4>
+                <ul class="menuSelecao">
+                    <li class="itemMenu" ><button onclick="mostrarSaldo()" id="saldo" value="saldo"> SALDO </button></li>
+                    <li class="itemMenu" ><button onclick="efetuarSaque()" id="saque" value="saque"> SAQUE </button></li>
+                    <li class="itemMenu" ><button onclick="efetuarDeposito()" id="deposito" value="deposito"> DEPOSITO </button></li>
+                    <li class="itemMenu" ><button onclick="finalizar()" id="encerrar" value="encerrar"> ENCERRAR </button></li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>
+            developed by Mosiah &copy;
+        </p>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/81d880f28b.js" crossorigin="anonymous"></script>
+</body>
+</html>
