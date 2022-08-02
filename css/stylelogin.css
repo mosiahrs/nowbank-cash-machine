@@ -108,6 +108,38 @@ ul {
     margin: 0px 10px 0px 10px;
 }
 
+#saqueContainer{
+    display:none;
+}
+#depositoContainer{
+    display: none;
+}
+
+#depositoInput,
+#saqueInput{
+    width: 200px;
+    height: 2em;
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    margin-top: 3px;
+    text-align: center;
+}
+#botaoDepositar,
+#botaoSacar{
+    background-color:rgba(0, 128, 0, 0.384);
+    color: white;
+    width: 200px;
+    height: 2.2em;
+    border: 1px solid rgba(0, 128, 0, 0.829);
+    border-radius: 0px 0px 5px 5px;
+}
+#botaoSacar:hover{
+    background-color:rgba(0, 128, 0, 0.247);
+    cursor: pointer;
+}
+
 .menuContainer {
     display: flex;
     height: 25%;

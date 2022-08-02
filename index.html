@@ -17,8 +17,23 @@
             <div id="screen">
                 
                 <article id="retornoInfo">
-                    <p> 
-                        <strong>Aqui vai o retorno do JS</strong> <br>tempora illum esse harum veritatis beatae est repellendus, consectetur distinctio exercitationem?
+
+                    <p id="intro">
+                        Seja bem vindo ao <strong>Now Bank</strong> <br>
+                        Escolha uma das opções abaixo: 
+                    </p>
+                    <p id="saqueContainer"> 
+                        <strong>Você escolheu a opção SAQUE</strong> <br>
+                        Digite o valor R$ <br>
+                        <input type="number" id="saqueInput" placeholder="Digite R$"><br>
+                        <input type="submit" id="botaoSacar" value="SACAR">
+                    </p>
+                    <p id="depositoContainer"> 
+                        <strong>Você escolheu a opção DEPOSITO</strong> <br>
+                        Digite o valor R$ <br>
+                        
+                        <input type="number" id="depositoInput" placeholder="Digite R$"><br>
+                        <input type="submit"  id="botaoDepositar" value="DEPOSITAR" onclick="calcular()">
                     </p>
                 </article>
             </div>
