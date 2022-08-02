@@ -5,7 +5,7 @@
 ![nowBank](https://user-images.githubusercontent.com/100864562/182362092-e31a116a-15f5-4240-8ce6-99117306e765.PNG)
 
 
-> Essa aplicação simula as opções de atendimento de um caixa eletrônico. Em um 
+> Essa aplicação simula as opções de atendimento de um caixa eletrônico. A aparência em um primeiro momento é uma homenagem ao GameBoy classico... 
 ### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
