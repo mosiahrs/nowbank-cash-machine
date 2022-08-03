@@ -1,5 +1,5 @@
 let bankName = 'Now Bank';
-let saldo = 500;
+let saldo = 1000;
 let opcaoSelecionada;
 let encerrarPrograma = false;
 
@@ -8,26 +8,38 @@ let saqueContainer = document.getElementById('saqueContainer')
 let intro = document.getElementById('intro')
 
 
-function mostrarElementosDeposito(){
-    intro.style.display ="none";
-    saqueContainer.style.display ="none"
-    depositoContainer.style.display ="block"
+function mostrarElementosDeposito() {
+    intro.style.display = "none";
+    saqueContainer.style.display = "none"
+    depositoContainer.style.display = "block"
 }
-function mostrarElementosSaque(){
-    intro.style.display ="none";
-    depositoContainer.style.display ="none"
-    saqueContainer.style.display ="block"
+function mostrarElementosSaque() {
+    intro.style.display = "none";
+    depositoContainer.style.display = "none"
+    saqueContainer.style.display = "block"
 }
 
-function calcular(){
+function calcularSaque(){
+    let entrada = document.getElementById('saqueInput');
+    let saida = document.getElementById('retornoInfo')
+    valor = Number(entrada.value)
+    if (valor > saldo) {
+        saida.innerHTML = `Saque não autorizado, valor indisponível`;
+    } else {
+        saldo = saldo - valor;
+        saida.innerHTML =` O valor R$ ${valor} foi autorizado`;
+    }
+}
+
+function calcularDeposito() {
     let entrada = document.getElementById('depositoInput');
     let saida = document.getElementById('retornoInfo')
     valor = Number(entrada.value)
     saldo = saldo + valor;
     console.log(saldo)
 
-    saida.innerHTML = `O depósito de R$ ${valor} foi efetuado com sucesso`
-}  
+    saida.innerHTML = `O depósito de R$ ${valor} foi efetuado com sucesso `
+}
 
 //Parametros - p/ Loop de Funcionamento
 function mostrarSaldo() {
@@ -65,21 +77,21 @@ const switchFunction = opcao => {
             break;
         case 'saque':
             mostrarElementosSaque()
-            let valorSaque = window.Number(prompt(` Digite o valor que deseja sacar "$"  `));
+            /*let valorSaque = window.Number(prompt(` Digite o valor que deseja sacar "$"  `));
             if (valorSaque > saldo) {
-                console.log('Saque não autorizado, valor indisponível');
+                alert('Saque não autorizado, valor indisponível');
             } else {
                 saldo = saldo - valorSaque;
                 alert(` O valor R$ ${valorSaque} foi autorizado`);
                 alert(`Seu saldo atual é R$ ${saldo}`);
-            }
+            }*/
             break;
-            case 'deposito':
-                mostrarElementosDeposito()
-                /*valorDeposito = window.Number(prompt(` Digite o valor que deseja depositar "$" `));
-                saldo = saldo + valorDeposito
-                alert(`Seu saldo atual é R$ ${saldo}`);*/
-                break;
+        case 'deposito':
+            mostrarElementosDeposito() /*
+            valorDeposito = window.Number(prompt(` Digite o valor que deseja depositar "$" `));
+            saldo = saldo + valorDeposito
+            alert(`Seu saldo atual é R$ ${saldo}`); */
+            break;
         case 'encerrar':
             let finalizaExecucao = document.getElementById('retornoInfo').innerHTML = `
             <p> 
@@ -89,7 +101,7 @@ const switchFunction = opcao => {
             encerrarPrograma = true;
             console.log(`O ${bankName} agradece a preferência, volte sempre!`);
             const reset = setTimeout(resetarTela, 2000);
-            function resetarTela(){
+            function resetarTela() {
                 location.reload();
             }
             break;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,45 @@
     <link rel="stylesheet" href="./css/stylelogin.css">
     <title>NOW BANK</title>
 </head>
+
 <body>
     <main id="mainScreen">
         <section id="screenContainer">
             <div class="saudation">
                 <p><span>Bem vindo</span> ao</p>
-                <span id="logo"><i class="fa-solid fa-shekel-sign"></i> NOW BANK </span>
-            </div>  
+                <span id="logo"><i class="fa-solid fa-coins"></i>NOW BANK </span>
+            </div>
             <div id="screen">
-                
                 <article id="retornoInfo">
-
                     <p id="intro">
                         Seja bem vindo ao <strong>Now Bank</strong> <br>
-                        Escolha uma das opções abaixo: 
+                        Escolha uma das opções abaixo:
                     </p>
-                    <p id="saqueContainer"> 
+                    <p id="saqueContainer">
                         <strong>Você escolheu a opção SAQUE</strong> <br>
                         Digite o valor R$ <br>
                         <input type="number" id="saqueInput" placeholder="Digite R$"><br>
-                        <input type="submit" id="botaoSacar" value="SACAR">
+                        <input type="submit" id="botaoSacar" value="SACAR" onclick="calcularSaque()">
                     </p>
-                    <p id="depositoContainer"> 
+
+                    <p id="depositoContainer">
                         <strong>Você escolheu a opção DEPOSITO</strong> <br>
                         Digite o valor R$ <br>
-                        
                         <input type="number" id="depositoInput" placeholder="Digite R$"><br>
-                        <input type="submit"  id="botaoDepositar" value="DEPOSITAR" onclick="calcular()">
+                        <input type="submit" id="botaoDepositar" value="DEPOSITAR" onclick="calcularDeposito()">
                     </p>
                 </article>
             </div>
-
             <div class="menuContainer">
-                <h4>Selecione a opção desejada</h4>
                 <ul class="menuSelecao">
-                    <li class="itemMenu" ><button onclick="mostrarSaldo()" id="saldo" value="saldo"> SALDO </button></li>
-                    <li class="itemMenu" ><button onclick="efetuarSaque()" id="saque" value="saque"> SAQUE </button></li>
-                    <li class="itemMenu" ><button onclick="efetuarDeposito()" id="deposito" value="deposito"> DEPOSITO </button></li>
-                    <li class="itemMenu" ><button onclick="finalizar()" id="encerrar" value="encerrar"> ENCERRAR </button></li>
+                    <li class="itemMenu"><button onclick="mostrarSaldo()" id="saldo" value="saldo"> SALDO </button></li>
+                    <li class="itemMenu"><button onclick="efetuarSaque()" id="saque" value="saque"> SAQUE </button></li>
+                    <li class="itemMenu"><button onclick="efetuarDeposito()" id="deposito" value="deposito"> DEPOSITO
+                        </button></li>
+                    <li class="itemMenu"><button onclick="finalizar()" id="encerrar" value="encerrar"> ENCERRAR
+                        </button></li>
                 </ul>
             </div>
-
         </section>
     </main>
     <footer>
@@ -55,8 +54,8 @@
             developed by Mosiah &copy;
         </p>
     </footer>
-
     <script src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/81d880f28b.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
