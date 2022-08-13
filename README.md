@@ -12,8 +12,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Criar o layout
 - [x] Criação do core lógico
 - [x] Integração com o DOM
-- [ ] Individualização das Execuções
-- [ ] Criar loop de funcionamento
+- [x] Individualização das Execuções
+- [x] Criar loop de funcionamento
 - [ ] Lapidar o design
 - [ ] Efetuar testes
 - [ ] Subir para produção
