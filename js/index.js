@@ -77,14 +77,6 @@ const switchFunction = opcao => {
             break;
         case 'saque':
             mostrarElementosSaque()
-            /*let valorSaque = window.Number(prompt(` Digite o valor que deseja sacar "$"  `));
-            if (valorSaque > saldo) {
-                alert('Saque não autorizado, valor indisponível');
-            } else {
-                saldo = saldo - valorSaque;
-                alert(` O valor R$ ${valorSaque} foi autorizado`);
-                alert(`Seu saldo atual é R$ ${saldo}`);
-            }*/
             break;
         case 'deposito':
             mostrarElementosDeposito() /*
