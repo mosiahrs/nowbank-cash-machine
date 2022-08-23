@@ -14,6 +14,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Individualização das Execuções
 - [x] Criar loop de funcionamento
 - [ ] Lapidar o design
+- [ ] Responsividade
 - [ ] Efetuar testes
 - [ ] Subir para produção
 
