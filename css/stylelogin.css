@@ -187,3 +187,19 @@ footer {
     bottom: 0;
     text-align: center;
 }
+
+@media (max-width: 500px)
+{
+    #screenContainer{
+        width: 350px;
+    }
+
+    #retornoInfo p{
+        font-size: 13px;
+    }
+
+    .itemMenu button{
+        height: 40px;
+        min-width: 75px;
+    }
+}
