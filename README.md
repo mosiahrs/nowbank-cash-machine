@@ -2,8 +2,7 @@
 
 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"> <img src="https://img.shields.io/badge/HTML5-323330?style=for-the-badge&logo=html5&logoColor=orange"> <img src="https://img.shields.io/badge/CSS3-323330?style=for-the-badge&logo=css3&logoColor=blue">
 
-![nowBank](https://user-images.githubusercontent.com/100864562/182362092-e31a116a-15f5-4240-8ce6-99117306e765.PNG)
-
+![image](https://user-images.githubusercontent.com/100864562/186147096-3675a840-5c71-49b9-970c-f1465f01b440.png)
 
 > Essa aplicação simula as opções de atendimento de um caixa eletrônico. A aparência em um primeiro momento é uma homenagem ao Super Nintendo/ GameBoy classico... 
 ### Ajustes e melhorias
@@ -25,6 +24,9 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Você instalou a versão mais recente de `<linguagem / dependência / requeridos>`
 * Você tem uma máquina `<Windows / Linux / Mac>`. 
 
+
+## 🔗 Link da Aplicação: 
+https://mosiahrs.github.io/nowbank-cash-machine/
 
 ## 📫 Contribuindo para <nome_do_projeto>
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
